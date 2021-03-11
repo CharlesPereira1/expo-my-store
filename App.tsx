@@ -5,7 +5,7 @@ import React from "react";
 import { AppLoading } from "expo";
 import { useFonts, Anton_400Regular } from "@expo-google-fonts/anton";
 
-import Routes from "./src/Routes";
+import Routes from "./src/routes";
 
 const App: React.FC = () => {
   let [fontsLoaded] = useFonts({
