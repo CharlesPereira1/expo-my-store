@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
+import { View, Text, ScrollView, Image } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { MaterialIcons } from "@expo/vector-icons";
 
-// import { Container } from './styles';
+import styles from "./styles";
 
 const Home: React.FC = () => {
   return (
@@ -30,38 +30,12 @@ const Home: React.FC = () => {
 
       <ScrollView>
         <Text style={styles.text}>LANÇAMENTOS</Text>
-        <View
-          style={{ flexDirection: "row", justifyContent: "space-around" }}
-        ></View>
+        <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
+          <View></View>
+        </View>
       </ScrollView>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    width: "100%",
-    backgroundColor: "#fff",
-  },
-  header: {
-    marginBottom: 8,
-  },
-  image: { width: "100%" },
-  textContainer: {
-    flexDirection: "row",
-    marginVertical: "5%",
-    marginHorizontal: "5%",
-  },
-  text: {
-    fontFamily: "Anton_400Regular",
-    fontSize: 26,
-    marginHorizontal: "1%",
-  },
-  line: {
-    borderBottomColor: "#D8d8d8",
-    borderBottomWidth: 2,
-  },
-});
 
 export default Home;
