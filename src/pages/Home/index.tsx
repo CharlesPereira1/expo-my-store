@@ -11,6 +11,12 @@ const Home: React.FC = () => {
           source={require("../../assets/banner.png")}
           style={styles.image}
         />
+
+        <View style={styles.textContainer}>
+          <Text style={styles.text}>TÊNIS</Text>
+          <Text style={styles.text}>*</Text>
+          <Text style={styles.text}>MASCULINO</Text>
+        </View>
       </View>
     </View>
   );
@@ -26,6 +32,8 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   image: {},
+  textContainer: {},
+  text: {},
 });
 
 export default Home;
