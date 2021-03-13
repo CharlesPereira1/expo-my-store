@@ -25,6 +25,15 @@ const Home: React.FC = () => {
           </TouchableOpacity>
         </View>
       </View>
+
+      <View style={styles.line} />
+
+      <ScrollView>
+        <Text style={styles.text}>LANÇAMENTOS</Text>
+        <View
+          style={{ flexDirection: "row", justifyContent: "space-around" }}
+        ></View>
+      </ScrollView>
     </View>
   );
 };
@@ -48,6 +57,10 @@ const styles = StyleSheet.create({
     fontFamily: "Anton_400Regular",
     fontSize: 26,
     marginHorizontal: "1%",
+  },
+  line: {
+    borderBottomColor: "#D8d8d8",
+    borderBottomWidth: 2,
   },
 });
 
