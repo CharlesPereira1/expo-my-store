@@ -1,5 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
+import { MaterialIcons } from "@expo/vector-icons";
 
 // import { Container } from './styles';
 
@@ -16,6 +18,9 @@ const Home: React.FC = () => {
           <Text style={styles.text}>TÊNIS</Text>
           <Text style={styles.text}>*</Text>
           <Text style={styles.text}>MASCULINO</Text>
+          <TouchableOpacity>
+            <MaterialIcons />
+          </TouchableOpacity>
         </View>
       </View>
     </View>
