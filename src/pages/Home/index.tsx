@@ -16,10 +16,12 @@ const Home: React.FC = () => {
 
         <View style={styles.textContainer}>
           <Text style={styles.text}>TÊNIS</Text>
-          <Text style={styles.text}>*</Text>
-          <Text style={styles.text}>MASCULINO</Text>
-          <TouchableOpacity>
-            <MaterialIcons />
+          <Text style={[styles.text, { color: "#CECECF" }]}>*</Text>
+          <Text style={[styles.text, { color: "#CECECF" }]}>MASCULINO</Text>
+          <TouchableOpacity
+            style={{ position: "absolute", right: 0, alignSelf: "center" }}
+          >
+            <MaterialIcons name="filter-list" size={24} color="#000" />
           </TouchableOpacity>
         </View>
       </View>
@@ -36,9 +38,17 @@ const styles = StyleSheet.create({
   header: {
     marginBottom: 8,
   },
-  image: {},
-  textContainer: {},
-  text: {},
+  image: { width: "100%" },
+  textContainer: {
+    flexDirection: "row",
+    marginVertical: "5%",
+    marginHorizontal: "5%",
+  },
+  text: {
+    fontFamily: "Anton_400Regular",
+    fontSize: 26,
+    marginHorizontal: "1%",
+  },
 });
 
 export default Home;
