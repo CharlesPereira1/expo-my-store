@@ -1,17 +1,12 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { Text, View } from "react-native";
 
 import styles from "./styles";
 
-interface ShoesProps {
-  children: ReactNode;
-}
-
-const Shoes: React.FC<ShoesProps> = ({ children }) => {
+const Shoes: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text>Shoes</Text>
-      {children}
     </View>
   );
 };

@@ -3,6 +3,8 @@ import { View, Text, ScrollView, Image } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { MaterialIcons } from "@expo/vector-icons";
 
+import Shoes from "../../components/Shoes";
+
 import styles from "./styles";
 
 const Home: React.FC = () => {
@@ -31,7 +33,8 @@ const Home: React.FC = () => {
       <ScrollView>
         <Text style={styles.text}>LANÇAMENTOS</Text>
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
-          <View></View>
+          <Shoes />
+          <Shoes />
         </View>
       </ScrollView>
     </View>
