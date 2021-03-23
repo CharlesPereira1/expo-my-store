@@ -4,13 +4,24 @@ import { Text, View, TouchableOpacity, Image, StyleSheet } from "react-native";
 import img from "../../assets/1.png";
 
 const Shoes: React.FC = () => {
+  const filterDesc = (desc: string) => {
+    if (desc.length < 27) {
+      return desc;
+    }
+    return `${desc.substring(0, 23)}...`;
+  };
+
   return (
     <TouchableOpacity style={styles.container}>
       <Image source={img} style={styles.shoesImage} />
 
       <View style={styles.content}>
-        <Text style={styles.shoesText}>Nike Shox 10</Text>
-        <Text style={styles.shoesText}>R$ 190,99</Text>
+        <Text style={styles.shoesText}>
+          {filterDesc("Nike Shox 10 da loja principal")}
+        </Text>
+        <Text style={styles.shoesText}>
+          {filterDesc("Nike Shox 10 da loja principal")}
+        </Text>
       </View>
     </TouchableOpacity>
   );
