@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import {
   Text,
   View,
@@ -11,11 +11,12 @@ import {
 import img from "../../assets/1.png";
 
 interface ShoesProps {
+  children: string;
   img: ImageProps;
   cost: string;
 }
 
-const Shoes: React.FC<ShoesProps> = ({ img, cost }) => {
+const Shoes: React.FC<ShoesProps> = ({ children, img, cost }) => {
   const filterDesc = (desc: string) => {
     if (desc.length < 27) {
       return desc;
@@ -28,12 +29,8 @@ const Shoes: React.FC<ShoesProps> = ({ img, cost }) => {
       <Image source={img} style={styles.shoesImage} />
 
       <View style={styles.content}>
-        <Text style={styles.shoesText}>
-          {filterDesc("Nike Shox 10 da loja principal")}
-        </Text>
-        <Text style={styles.shoesText}>
-          {filterDesc("Nike Shox 10 da loja principal")}
-        </Text>
+        <Text style={styles.shoesText}>{filterDesc(children)}</Text>
+        <Text style={styles.shoesText}>{cost}</Text>
       </View>
     </TouchableOpacity>
   );
