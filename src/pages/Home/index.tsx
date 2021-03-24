@@ -5,6 +5,9 @@ import { MaterialIcons } from "@expo/vector-icons";
 
 import Shoes from "../../components/Shoes";
 
+import image1 from "../../assets/1.png";
+import image2 from "../../assets/2.png";
+
 import styles from "./styles";
 
 const Home: React.FC = () => {
@@ -33,8 +36,12 @@ const Home: React.FC = () => {
       <ScrollView>
         <Text style={styles.text}>LANÇAMENTOS</Text>
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
-          <Shoes />
-          <Shoes />
+          <Shoes img={image1} cost="R$ 189,90">
+            Tênis Nike Super Max
+          </Shoes>
+          <Shoes img={image2} cost="R$ 349,90">
+            Tênis Nike Revolution
+          </Shoes>
         </View>
       </ScrollView>
     </View>

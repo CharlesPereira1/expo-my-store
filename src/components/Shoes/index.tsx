@@ -1,9 +1,21 @@
 import React from "react";
-import { Text, View, TouchableOpacity, Image, StyleSheet } from "react-native";
+import {
+  Text,
+  View,
+  TouchableOpacity,
+  Image,
+  StyleSheet,
+  ImageProps,
+} from "react-native";
 
 import img from "../../assets/1.png";
 
-const Shoes: React.FC = () => {
+interface ShoesProps {
+  img: ImageProps;
+  cost: string;
+}
+
+const Shoes: React.FC<ShoesProps> = ({ img, cost }) => {
   const filterDesc = (desc: string) => {
     if (desc.length < 27) {
       return desc;
