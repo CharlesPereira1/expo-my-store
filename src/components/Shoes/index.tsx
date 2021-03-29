@@ -14,7 +14,7 @@ interface ShoesProps {
   children: string;
   img: ImageProps;
   cost: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const Shoes: React.FC<ShoesProps> = ({ children, img, cost, onClick }) => {

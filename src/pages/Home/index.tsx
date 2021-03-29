@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, ScrollView, Image } from "react-native";
+import { View, Text, ScrollView, Image, Alert } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { MaterialIcons } from "@expo/vector-icons";
 
@@ -40,26 +40,50 @@ const Home: React.FC = () => {
       <ScrollView>
         <Text style={styles.text}>LANÇAMENTOS</Text>
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
-          <Shoes img={image1} cost="R$ 189,90">
+          <Shoes
+            img={image1}
+            cost="R$ 189,90"
+            onClick={() => Alert.alert("Clicou")}
+          >
             Tênis Nike Super Max
           </Shoes>
-          <Shoes img={image2} cost="R$ 349,90">
+          <Shoes
+            img={image2}
+            cost="R$ 349,90"
+            onClick={() => Alert.alert("Clicou")}
+          >
             Tênis Nike Revolution
           </Shoes>
         </View>
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
-          <Shoes img={image4} cost="R$ 349,90">
+          <Shoes
+            img={image4}
+            cost="R$ 349,90"
+            onClick={() => Alert.alert("Clicou")}
+          >
             Tênis Nike Revolution
           </Shoes>
-          <Shoes img={image5} cost="R$ 599,90">
+          <Shoes
+            img={image5}
+            cost="R$ 599,90"
+            onClick={() => Alert.alert("Clicou")}
+          >
             Tênis Nike Epic Carbon
           </Shoes>
         </View>
         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
-          <Shoes img={image5} cost="R$ 349,90">
+          <Shoes
+            img={image5}
+            cost="R$ 349,90"
+            onClick={() => Alert.alert("Clicou")}
+          >
             Tênis Nike Revolution
           </Shoes>
-          <Shoes img={image6} cost="R$ 599,90">
+          <Shoes
+            img={image6}
+            cost="R$ 599,90"
+            onClick={() => Alert.alert("Clicou")}
+          >
             Tênis Nike Epic Carbon
           </Shoes>
         </View>
