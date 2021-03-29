@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, ScrollView, Image, Alert } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { MaterialIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 import Shoes from "../../components/Shoes";
 
@@ -15,6 +16,8 @@ import image6 from "../../assets/6.png";
 import styles from "./styles";
 
 const Home: React.FC = () => {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -43,14 +46,14 @@ const Home: React.FC = () => {
           <Shoes
             img={image1}
             cost="R$ 189,90"
-            onClick={() => Alert.alert("Clicou")}
+            onClick={() => navigation.navigate("Detail")}
           >
             Tênis Nike Super Max
           </Shoes>
           <Shoes
             img={image2}
             cost="R$ 349,90"
-            onClick={() => Alert.alert("Clicou")}
+            onClick={() => navigation.navigate("Detail")}
           >
             Tênis Nike Revolution
           </Shoes>
