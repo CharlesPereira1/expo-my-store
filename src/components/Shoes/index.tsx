@@ -14,9 +14,10 @@ interface ShoesProps {
   children: string;
   img: ImageProps;
   cost: string;
+  onClick: () => void;
 }
 
-const Shoes: React.FC<ShoesProps> = ({ children, img, cost }) => {
+const Shoes: React.FC<ShoesProps> = ({ children, img, cost, onClick }) => {
   const filterDesc = (desc: string) => {
     if (desc.length < 27) {
       return desc;
@@ -25,7 +26,7 @@ const Shoes: React.FC<ShoesProps> = ({ children, img, cost }) => {
   };
 
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onClick}>
       <Image source={img} style={styles.shoesImage} />
 
       <View style={styles.content}>
