@@ -1,6 +1,13 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-import { View, Text, Image, ScrollView, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  ScrollView,
+  TouchableOpacity,
+  StyleSheet,
+} from "react-native";
 
 import detail from "../../assets/detail.png";
 
@@ -14,10 +21,27 @@ const Detail: React.FC = () => {
   });
 
   return (
-    <View>
-      <Image source={detail}></Image>
-    </View>
+    <ScrollView style={styles.container}>
+      <Image source={detail} style={styles.image} resizeMode="cover"></Image>
+
+      <View>
+        <View>
+          <Text style={(styles.title, { fontSize: 24 })}>R$ 298,98</Text>
+        </View>
+        <View>
+          <Text style={(styles.title, { fontSize: 30 })}>
+            Nike Downshifter 10
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {},
+  image: {},
+  title: {},
+});
 
 export default Detail;
