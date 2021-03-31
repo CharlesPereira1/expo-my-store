@@ -1,14 +1,7 @@
-import React, { ReactNode } from "react";
-import {
-  Text,
-  View,
-  TouchableOpacity,
-  Image,
-  StyleSheet,
-  ImageProps,
-} from "react-native";
+import React from "react";
+import { Text, View, TouchableOpacity, Image, ImageProps } from "react-native";
 
-import img from "../../assets/1.png";
+import styles from "./styles";
 
 interface ShoesProps {
   children: string;
@@ -36,23 +29,5 @@ const Shoes: React.FC<ShoesProps> = ({ children, img, cost, onClick }) => {
     </TouchableOpacity>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    paddingVertical: "2%",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  shoesImage: {
-    width: 175,
-    height: 175,
-  },
-  content: {
-    opacity: 0.4,
-  },
-  shoesText: {
-    fontSize: 16,
-  },
-});
 
 export default Shoes;

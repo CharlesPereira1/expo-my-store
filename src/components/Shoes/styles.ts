@@ -2,9 +2,19 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    width: "100%",
-    backgroundColor: "#fff",
+    paddingVertical: "2%",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  shoesImage: {
+    width: 175,
+    height: 175,
+  },
+  content: {
+    opacity: 0.4,
+  },
+  shoesText: {
+    fontSize: 16,
   },
 });
 
