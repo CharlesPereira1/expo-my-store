@@ -11,7 +11,9 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: "Anton_400Regular",
+    paddingHorizontal: "2%",
   },
+  dotContainer: {},
 });
 
 export default styles;

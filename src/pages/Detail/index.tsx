@@ -9,6 +9,8 @@ import {
   StyleSheet,
 } from "react-native";
 
+import Dot from "../../components/Dot";
+
 import detail from "../../assets/detail.png";
 
 import styles from "./styles";
@@ -29,9 +31,13 @@ const Detail: React.FC = () => {
           <Text style={[(styles.title, { fontSize: 24 })]}>R$ 298,98</Text>
         </View>
         <View>
-          <Text style={[(styles.title, { fontSize: 30 })]}>
+          <Text style={[(styles.title, { fontSize: 30, opacity: 0.4 })]}>
             Nike Downshifter 10
           </Text>
+        </View>
+
+        <View style={styles.dotContainer}>
+          <Dot />
         </View>
       </View>
     </ScrollView>
