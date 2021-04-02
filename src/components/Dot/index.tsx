@@ -1,12 +1,13 @@
 import React from "react";
+import { View } from "react-native";
 
-import { Container } from "./styles";
+import styles from "./styles";
 
 const Dot: React.FC = () => {
   return (
-    <Container>
+    <View>
       <h1>Dot</h1>
-    </Container>
+    </View>
   );
 };
 
