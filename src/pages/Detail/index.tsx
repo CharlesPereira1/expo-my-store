@@ -26,10 +26,10 @@ const Detail: React.FC = () => {
 
       <View>
         <View>
-          <Text style={(styles.title, { fontSize: 24 })}>R$ 298,98</Text>
+          <Text style={[(styles.title, { fontSize: 24 })]}>R$ 298,98</Text>
         </View>
         <View>
-          <Text style={(styles.title, { fontSize: 30 })}>
+          <Text style={[(styles.title, { fontSize: 30 })]}>
             Nike Downshifter 10
           </Text>
         </View>
@@ -37,11 +37,5 @@ const Detail: React.FC = () => {
     </ScrollView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {},
-  image: {},
-  title: {},
-});
 
 export default Detail;

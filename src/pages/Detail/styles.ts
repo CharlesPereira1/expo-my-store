@@ -6,6 +6,12 @@ const styles = StyleSheet.create({
     width: "100%",
     backgroundColor: "#fff",
   },
+  image: {
+    width: "100%",
+  },
+  title: {
+    fontFamily: "Anton_400Regular",
+  },
 });
 
 export default styles;
