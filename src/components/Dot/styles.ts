@@ -1,10 +1,10 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: Dimensions.get("window").width * 0.05,
+    height: Dimensions.get("window").height * 0.05,
+    borderRadius: (Dimensions.get("window").height * 0.05) / 2,
     backgroundColor: "red",
   },
 });
