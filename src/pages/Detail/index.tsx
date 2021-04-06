@@ -39,7 +39,16 @@ const Detail: React.FC = () => {
 
         <View style={{ flexDirection: "row", width: "100%" }}>
           <ScrollView>
-            <SizeButton />
+            <SizeButton bgColor="#17181a" color="fff">
+              40
+            </SizeButton>
+            <SizeButton>39</SizeButton>
+            <SizeButton bgColor="#17181a" color="fff">
+              38
+            </SizeButton>
+            <SizeButton bgColor="#17181a" color="fff">
+              42
+            </SizeButton>
           </ScrollView>
         </View>
       </View>
