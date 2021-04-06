@@ -43,12 +43,8 @@ const Detail: React.FC = () => {
               40
             </SizeButton>
             <SizeButton>39</SizeButton>
-            <SizeButton bgColor="#17181a" color="fff">
-              38
-            </SizeButton>
-            <SizeButton bgColor="#17181a" color="fff">
-              42
-            </SizeButton>
+            <SizeButton>38</SizeButton>
+            <SizeButton>42</SizeButton>
           </ScrollView>
         </View>
       </View>
