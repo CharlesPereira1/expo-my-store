@@ -3,8 +3,12 @@ import { View } from "react-native";
 
 import styles from "./styles";
 
-const Dot: React.FC = () => {
-  return <View style={styles.container}></View>;
+interface DotProps {
+  color: string;
+}
+
+const Dot: React.FC<DotProps> = ({ color }) => {
+  return <View style={[styles.container, { backgroundColor: color }]}></View>;
 };
 
 export default Dot;

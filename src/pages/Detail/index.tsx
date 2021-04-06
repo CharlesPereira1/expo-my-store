@@ -37,7 +37,10 @@ const Detail: React.FC = () => {
         </View>
 
         <View style={styles.dotContainer}>
-          <Dot />
+          <Dot color="#2379f4" />
+          <Dot color="#fb6e53" />
+          <Dot color="#ddd" />
+          <Dot color="#000" />
         </View>
       </View>
     </ScrollView>
