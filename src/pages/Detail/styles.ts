@@ -13,7 +13,10 @@ const styles = StyleSheet.create({
     fontFamily: "Anton_400Regular",
     paddingHorizontal: "2%",
   },
-  dotContainer: {},
+  dotContainer: {
+    flexDirection: "row",
+    marginVertical: "7%",
+  },
 });
 
 export default styles;

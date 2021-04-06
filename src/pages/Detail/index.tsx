@@ -1,15 +1,9 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-import {
-  View,
-  Text,
-  Image,
-  ScrollView,
-  TouchableOpacity,
-  StyleSheet,
-} from "react-native";
+import { View, Text, Image, ScrollView } from "react-native";
 
 import Dot from "../../components/Dot";
+import SizeButton from "../../components/SizeButton";
 
 import detail from "../../assets/detail.png";
 
@@ -41,6 +35,12 @@ const Detail: React.FC = () => {
           <Dot color="#fb6e53" />
           <Dot color="#ddd" />
           <Dot color="#000" />
+        </View>
+
+        <View style={{ flexDirection: "row", width: "100%" }}>
+          <ScrollView>
+            <SizeButton />
+          </ScrollView>
         </View>
       </View>
     </ScrollView>
