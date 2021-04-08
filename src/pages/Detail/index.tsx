@@ -38,7 +38,7 @@ const Detail: React.FC = () => {
         </View>
 
         <View style={{ flexDirection: "row", width: "100%" }}>
-          <ScrollView>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <SizeButton bgColor="#17181a" color="fff">
               40
             </SizeButton>
@@ -46,6 +46,18 @@ const Detail: React.FC = () => {
             <SizeButton>38</SizeButton>
             <SizeButton>42</SizeButton>
           </ScrollView>
+        </View>
+
+        <View style={styles.textContent}>
+          <Text style={styles.textTitle}>Nike Downshifter 10</Text>
+          <Text style={styles.textContent}>
+            O Nike Revolution 5 amortece a sua passada com espuma macia para
+            manter você correndo com conforto. Material knit super leve envolve
+            o seu pé em suporte respirável, enquanto um design minimalista é
+            perfeito para qualquer ocasião do seu dia.
+          </Text>
+          <Text style={styles.textList}>- Categoria: Amortecimento</Text>
+          <Text>- Material: Mesh</Text>
         </View>
       </View>
     </ScrollView>
