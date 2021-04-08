@@ -57,7 +57,7 @@ const Detail: React.FC = () => {
             perfeito para qualquer ocasião do seu dia.
           </Text>
           <Text style={styles.textList}>- Categoria: Amortecimento</Text>
-          <Text>- Material: Mesh</Text>
+          <Text style={styles.textList}>- Material: Mesh</Text>
         </View>
       </View>
     </ScrollView>
