@@ -61,7 +61,7 @@ const Detail: React.FC = () => {
           <Text style={styles.textList}>- Material: Mesh</Text>
         </View>
 
-        <Button />
+        <Button>COMPRAR</Button>
       </View>
     </ScrollView>
   );
