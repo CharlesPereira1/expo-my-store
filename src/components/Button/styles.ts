@@ -1,5 +1,21 @@
-import styled from 'styled-components';
+import { StyleSheet } from "react-native";
 
-export const Container = styled.div`
+const styles = StyleSheet.create({
+  btnContainer: {
+    paddingVertical: "2%",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  // shoesImage: {
+  //   width: 175,
+  //   height: 175,
+  // },
+  // content: {
+  //   opacity: 0.4,
+  // },
+  // shoesText: {
+  //   fontSize: 16,
+  // },
+});
 
-`;
+export default styles;

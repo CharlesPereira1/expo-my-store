@@ -1,14 +1,15 @@
 import React from "react";
+import { Text, View } from "react-native";
 
-import { Container } from "./styles";
+import styles from "./styles";
 
 interface ButtonProps {}
 
 const Button: React.FC = () => {
   return (
-    <Container>
-      <h1>Button</h1>
-    </Container>
+    <View style={styles.btnContainer}>
+      <Text style={styles.title}>Button</Text>
+    </View>
   );
 };
 
