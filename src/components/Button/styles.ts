@@ -1,21 +1,23 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  btnContainer: {
-    paddingVertical: "2%",
+  container: {
     alignItems: "center",
     justifyContent: "center",
   },
-  // shoesImage: {
-  //   width: 175,
-  //   height: 175,
-  // },
-  // content: {
-  //   opacity: 0.4,
-  // },
-  // shoesText: {
-  //   fontSize: 16,
-  // },
+  btnContainer: {
+    width: "90%",
+    height: 50,
+    backgroundColor: "#17181a",
+    borderRadius: 5,
+    marginVertical: "5%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  title: {
+    fontSize: 17,
+    color: "#fff",
+  },
 });
 
 export default styles;
