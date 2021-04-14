@@ -1,5 +1,12 @@
-import styled from 'styled-components';
+import { StyleSheet } from "react-native";
 
-export const Container = styled.div`
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    width: "100%",
+    backgroundColor: "#fff",
+  },
+  title: {},
+});
 
-`;
+export default styles;
