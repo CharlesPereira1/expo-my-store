@@ -5,6 +5,7 @@ import { View, Text, Image, ScrollView } from "react-native";
 import Dot from "../../components/Dot";
 import SizeButton from "../../components/SizeButton";
 import Button from "../../components/Button";
+import Footer from "../../components/Footer";
 
 import detail from "../../assets/detail.png";
 
@@ -62,6 +63,10 @@ const Detail: React.FC = () => {
         </View>
 
         <Button>COMPRAR</Button>
+
+        <View style={styles.line} />
+
+        <Footer />
       </View>
     </ScrollView>
   );

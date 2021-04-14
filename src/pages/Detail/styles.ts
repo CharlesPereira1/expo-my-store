@@ -32,6 +32,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 25,
   },
+  line: {
+    borderWidth: 1,
+    borderBottomColor: "#DDD",
+    marginVertical: "2%",
+  },
 });
 
 export default styles;
