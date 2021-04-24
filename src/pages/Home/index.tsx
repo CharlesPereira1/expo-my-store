@@ -27,9 +27,11 @@ const Home: React.FC = () => {
         />
 
         <View style={styles.textContainer}>
-          <Text style={styles.text}>TÊNIS</Text>
-          <Text style={[styles.text, { color: "#CECECF" }]}>*</Text>
-          <Text style={[styles.text, { color: "#CECECF" }]}>MASCULINO</Text>
+          <View style={styles.textContent}>
+            <Text style={styles.text}>TÊNIS</Text>
+            <Text style={[styles.text, { color: "#CECECF" }]}>*</Text>
+            <Text style={[styles.text, { color: "#CECECF" }]}>MASCULINO</Text>
+          </View>
           <TouchableOpacity
             style={{ position: "absolute", right: 0, alignSelf: "center" }}
           >

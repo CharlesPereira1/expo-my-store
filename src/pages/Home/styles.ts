@@ -10,10 +10,15 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   image: { width: "100%" },
+
   textContainer: {
+    justifyContent: "space-between",
     flexDirection: "row",
     marginVertical: "5%",
     marginHorizontal: "5%",
+  },
+  textContent: {
+    flexDirection: "row",
   },
   text: {
     fontFamily: "Anton_400Regular",
